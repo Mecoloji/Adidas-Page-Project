@@ -16,7 +16,6 @@ body{
     background-image: url("main-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-size: 100%; */
 }
 /* Body Style End */
 
@@ -177,3 +176,112 @@ span{
     text-shadow: 2px 1px 8px #000;
 }
 /* Main Text Style End */
+
+
+/* Popular Right Now Style Start */
+.popular-right-now{
+    position: absolute;
+    top: 1080px;
+}
+
+.popular-r-now-h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 815px;
+}
+
+.popular-r-now-a a{
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 7px;
+    position: relative;
+    left: 650px;
+    top: 70px;
+    letter-spacing: 0.8px;
+    background-color: rgba(255, 255, 255, 0.212);
+}
+.popular-r-now-a a:hover{
+    border: rgb(0, 0, 0);
+}
+/* Popular Right Now Style End */
+
+
+
+.adidas-photo{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    position: relative;
+    top: 1200px;
+    margin-left: 350px;
+}
+
+.women-photo{
+    width: 370px;
+    height: 400px;
+    margin-right: 70px;
+}
+.women-photo-div p{
+    position: absolute;
+    top: 170px;
+    left: 150px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #000;
+    background-color: #000;
+    letter-spacing: 2px;
+    padding: 4px;
+}
+
+
+.men-photo{
+    width: 370px;
+    height: 400px;
+    margin-right: 70px;
+}
+.men-photo-div p{
+    position: absolute;
+    top: 170px;
+    left: 580px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #000;
+    background-color: #000;
+    letter-spacing: 2px;
+    padding: 4px;
+    
+}
+
+.kid-photo{
+    width: 370px;
+    height: 400px;
+}
+.kid-photo-div p{
+    position: absolute;
+    top: 170px;
+    left: 1040px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #000;
+    background-color: #000;
+    letter-spacing: 2px;
+    padding: 4px;
+}
+
+.adidas-photo h2{
+    font-size: 28px;
+    position: absolute;
+    bottom: 420px;
+    text-align: center;
+}
