@@ -1,46 +1,55 @@
-/* Fonts Start */
+/* ===== Fonts Start ===== */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-/* Fonts End */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* ===== Fonts End ===== */
 
-/* RESET */
+/* ===== RESET =====*/
 *{
     margin: 0;
     padding: 0;
 }
-/* RESET */
+/* ===== RESET ===== */
 
 
-/* Body Style Start */
-body{
+/* ===== Box Sizing Start ===== */
+*{
+    box-sizing: border-box;
+}
+/* ===== Box Sizing End ===== */
+
+
+/* ===== Body Style Start ===== */
+html{
     background-image: url("main-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* Body Style End */
+/* ===== Body Style End ===== */
 
 
-/* Header Style Start */
+/* ===== Header Style Start ===== */
 header{
     width: 100%;
     height: 140px;
     background-color: #fff;
     margin-top: 30px;
 }
-/* Header Style End */
+/* ===== Header Style End ===== */
 
 
-/* Top Left Logo Style Start */
+/* ===== Top Left Logo Style Start ===== */
 .top-left-logo{
     height: 105px;
     width: 105px;
     background-color: white;
     margin-left: 10px;
 }
-/* Top Left Logo Style End */
+/* ===== Top Left Logo Style End ===== */
 
 
-/* Nav Bar Center Style Start */
+/* ===== Nav Bar Center Style Start ===== */
 .nav-bar-center{
     text-align: center;
     text-transform: uppercase;
@@ -60,11 +69,14 @@ li{
 span{
     opacity: 0.6;
 }
-/* Nav Bar Center Style Start */
+.nav-bar-center a:hover{
+    text-decoration: underline #9D0208;
+}
+/* ===== Nav Bar Center Style Start ===== */
 
 
 
-/* Searchbar Header Top Style Start */
+/* ===== Searchbar Header Top Style Start ===== */
 .searchbar-header-top{
     text-align: end;
     position: relative;
@@ -86,11 +98,11 @@ span{
     left: 20px;
     cursor: pointer;
 }
-/* Searchbar Header Top Style End */
+/* ===== Searchbar Header Top Style End ===== */
 
 
 
-/* Searchbar Header Bottom Style Start */
+/* ===== Searchbar Header Bottom Style Start ===== */
 .searchbar-header-bottom{
     text-align: right;
     position: relative;
@@ -117,6 +129,7 @@ span{
     right: 15px;
     top: 10px;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 .icon-fav{
@@ -132,15 +145,16 @@ span{
     width: 22px;
     height: 22px;
     position: relative;
-    right: 5px;
+    right: 0;
     top: 6px;
     cursor: pointer;
+    opacity: 0.7;
 }
-/* Searchbar Header Bottom Style End */
+/* ===== Searchbar Header Bottom Style End ===== */
 
 
 
-/* Main Text Style Start */
+/* ===== Main Text Style Start ===== */
 .text-container{
     color: #fff;
     position: absolute;
@@ -175,13 +189,14 @@ span{
     padding: 5px;
     text-shadow: 2px 1px 8px #000;
 }
-/* Main Text Style End */
+/* ===== Main Text Style End ===== */
 
 
-/* Popular Right Now Style Start */
+/* ===== Popular Right Now Style Start ===== */
 .popular-right-now{
     position: absolute;
     top: 1080px;
+    font-family: Rubik, sans-serif;
 }
 
 .popular-r-now-h2{
@@ -206,28 +221,31 @@ span{
     top: 70px;
     letter-spacing: 0.8px;
     background-color: rgba(255, 255, 255, 0.212);
+    font-family: Abril Fatface, sans-serif;
 }
 .popular-r-now-a a:hover{
     border: rgb(0, 0, 0);
 }
-/* Popular Right Now Style End */
+/* ===== Popular Right Now Style End ===== */
 
 
-
+/* ===== Adidas Photo & Gender Style Start ===== */
 .adidas-photo{
     display: flex;
-    width: 100%;
+    width: auto;
     flex-wrap: nowrap;
     box-sizing: border-box;
     position: relative;
     top: 1200px;
     margin-left: 350px;
+    font-family: Rubik, sans-serif;
 }
 
 .women-photo{
     width: 370px;
-    height: 400px;
+    height: 420px;
     margin-right: 70px;
+    cursor: pointer;
 }
 .women-photo-div p{
     position: absolute;
@@ -237,16 +255,22 @@ span{
     text-transform: uppercase;
     color: #fff;
     border: 1px solid #000;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.705);
     letter-spacing: 2px;
-    padding: 4px;
+    padding: 3px 6px 3px 6px ;
+    font-family: Abril Fatface, sans-serif;
+}
+.women-photo-div p:hover{
+    background-color: #ffffffc9;
+    color: #000;
 }
 
 
 .men-photo{
     width: 370px;
-    height: 400px;
+    height: 420px;
     margin-right: 70px;
+    cursor: pointer;
 }
 .men-photo-div p{
     position: absolute;
@@ -256,15 +280,20 @@ span{
     text-transform: uppercase;
     color: #fff;
     border: 1px solid #000;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.705);
     letter-spacing: 2px;
-    padding: 4px;
-    
+    padding: 3px 6px 3px 6px ;
+    font-family: Abril Fatface, sans-serif;
+}
+.men-photo-div p:hover{
+    background-color: #ffffffc9;
+    color: #000;
 }
 
 .kid-photo{
     width: 370px;
-    height: 400px;
+    height: 420px;
+    cursor: pointer;
 }
 .kid-photo-div p{
     position: absolute;
@@ -274,14 +303,171 @@ span{
     text-transform: uppercase;
     color: #fff;
     border: 1px solid #000;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.705);
     letter-spacing: 2px;
-    padding: 4px;
+    padding: 3px 6px 3px 6px ;
+    font-family: Abril Fatface, sans-serif;
+}
+.kid-photo-div p:hover{
+    background-color: #ffffffc9;
+    color: #000;
 }
 
 .adidas-photo h2{
     font-size: 28px;
     position: absolute;
-    bottom: 420px;
+    bottom: 444px;
     text-align: center;
 }
+/* ===== Adidas Photo & Gender Style End ===== */
+
+
+
+/* ===== Container Product Style Start ===== */
+.container-product{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 1950px;
+    font-family: Rubik, sans-serif;
+}
+.container-product h2{
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 300px;
+    left: 103px;
+    font-size: 26.5px;
+}
+.container-product p{
+    background-color: #fff;
+    position: absolute;
+    top: 258px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.container-product h4,h5{
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 15.2px;
+    opacity: 0.8;
+}
+
+.photo-1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 100px;
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #202020 0%, #9D0208 80%) 1;
+}
+.forum-low-shoes-text{
+    position: absolute;
+    top: 290px;
+}
+.photo-1 .photo-1fav-icon{
+    width: 18px;
+    position: absolute;
+    bottom: 300px;
+    left: 240px;
+    cursor: pointer;
+}
+
+.photo-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #202020 0%, #9D0208 80%) 1;
+}
+.niteball-shoes-text{
+    position: absolute;
+    top: 290px;
+}
+.photo-2 .photo-2fav-icon{
+    width: 18px;
+    position: absolute;
+    bottom: 300px;
+    left: 240px;
+    cursor: pointer;
+}
+
+.photo-3{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #202020 0%, #9D0208 80%) 1;
+}
+.ozrah-shoes-text{
+    position: absolute;
+    top: 290px;
+}
+.photo-3 .photo-3fav-icon{
+    width: 18px;
+    position: absolute;
+    bottom: 300px;
+    left: 240px;
+    cursor: pointer;
+}
+
+.photo-4{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #202020 0%, #9D0208 80%) 1;
+}
+.ozweego-shoes-text{
+    position: absolute;
+    top: 290px;
+}
+.photo-4 .photo-4fav-icon{
+    width: 18px;
+    position: absolute;
+    bottom: 300px;
+    left: 240px;
+    cursor: pointer;
+}
+
+.photo-5{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #202020 0%, #9D0208 80%) 1;
+}
+.supernova-shoes-text{
+    position: absolute;
+    top: 290px;
+}
+.photo-5 .photo-5fav-icon{
+    width: 18px;
+    position: absolute;
+    bottom: 300px;
+    left: 240px;
+    cursor: pointer;
+}
+
+.photo-6{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #202020 0%, #9D0208 80%) 1;
+}
+.ultraboost-shoes-text{
+    position: absolute;
+    top: 290px;
+}
+.photo-6 .photo-6fav-icon{
+    width: 18px;
+    position: absolute;
+    bottom: 300px;
+    left: 240px;
+    cursor: pointer;
+}
+/* ===== Container Product Style End ===== */
